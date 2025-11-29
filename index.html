@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITLIFE - Actividad 4 | Jhojan Esneider Monroy</title>
+  <meta name="description" content="FITLIFE Gym — Entrenamiento, clases grupales y entrenadores personales. Descubre horarios y servicios." />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="js/script.js" />
+</head>
+<body>
+
+  <a class="visually-hidden-focusable" href="#main-content">Saltar al contenido</a>
+
+  <!-- Header -->
+<header id="mainHeader" class="fixed-top" role="banner">
+  <div class="container d-flex align-items-center justify-content-between py-3">
+    <a class="d-flex align-items-center gap-2 brand-link" href="#inicio" aria-label="FITLIFE - Inicio">
+      <div class="brand-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="1.2" aria-hidden="true">
+          <rect x="1.5" y="7" width="3.5" height="10" rx="1"></rect>
+          <rect x="19" y="7" width="3.5" height="10" rx="1"></rect>
+          <rect x="8.5" y="9" width="7" height="6" rx="1"></rect>
+        </svg>
+      </div>
+      <span class="brand-text fw-bold">FITLIFE</span>
+    </a>
+
+    <nav class="desktop-nav d-none d-md-flex align-items-center gap-3" role="navigation" aria-label="Navegación principal">
+      <a class="nav-link nav-link-underlined" href="#inicio">Inicio</a>
+      <a class="nav-link nav-link-underlined" href="#servicios">Servicios</a>
+      <a class="nav-link nav-link-underlined" href="#horarios">Horarios</a>
+      <a class="btn btn-orange ms-2" href="#contacto">Contacto</a>
+    </nav>
+
+    <button id="navToggler" class="d-md-none toggler-btn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú móvil">
+    <div class="mobile-menu-inner">
+      <a class="mb-3 brand-link d-flex align-items-center gap-2" href="#inicio"><div class="brand-icon-sm">FL</div><span class="brand-text">FITLIFE</span></a>
+      <nav role="navigation" aria-label="Menú móvil">
+        <a class="mobile-link" href="#inicio">Inicio</a>
+        <a class="mobile-link" href="#servicios">Servicios</a>
+        <a class="mobile-link" href="#horarios">Horarios</a>
+        <a class="btn btn-orange w-100 mt-3" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <button class="mobile-close" aria-label="Cerrar menú">✕</button>
+  </div>
+
+  <div id="mobileMenuOverlay" class="mobile-menu-overlay" aria-hidden="true"></div>
+</header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero d-flex align-items-center text-center text-white min-vh-100">
+    <div class="container" id="main-content">
+      <span class="hero-badge">PLANIFICA TU SEMANA</span>
+      <h1 class="display-4 fw-bold mt-3 gradient-title" style="color: white;">Transforma Tu <span class="text-orange">Vida</span></h1>
+      <p class="lead mt-3 mx-auto" style="max-width: 860px; color: white;">Únete a FITLIFE Gym y descubre el mejor lugar para alcanzar tus metas de fitness con equipamiento de última generación y entrenadores profesionales</p>
+
+      <div class="mt-4 d-flex justify-content-center gap-3 hero-cta">
+        <a href="#contacto" class="btn btn-orange btn-lg">Comienza Hoy</a>
+        <a href="#servicios" class="btn btn-ghost btn-lg">Ver Servicios</a>
+      </div>
+
+      <div class="hero-stats d-flex justify-content-center gap-3 flex-wrap mt-5">
+        <div class="stat-card p-4 text-center">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Miembros Activos</div>
+        </div>
+        <div class="stat-card p-4 text-center">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Clases Semanales</div>
+        </div>
+        <div class="stat-card p-4 text-center">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Entrenadores Expertos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-6">
+    <div class="container text-center">
+      <span class="section-badge">LO QUE OFRECEMOS</span>
+      <h2 class="section-title mt-3">Nuestros Servicios</h2>
+      <p class="mt-2 mx-auto mb-5" style="max-width:700px;">Ofrecemos una amplia variedad de servicios para satisfacer todas tus necesidades de fitness y bienestar</p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4 h-100">
+            <div class="service-icon bg-orange">🏋️</div>
+            <h3 class="mt-3">Entrenamiento con Pesas</h3>
+            <p class="mt-2">Equipos de última generación para fuerza y desarrollo muscular.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4 h-100">
+            <div class="service-icon bg-orange">🧘</div>
+            <h3 class="mt-3">Clases Grupales</h3>
+            <p class="mt-2">Yoga, Spinning, Zumba y más — entrenamientos en grupo.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4 h-100">
+            <div class="service-icon bg-orange">❤️</div>
+            <h3 class="mt-3">Cardio Completo</h3>
+            <p class="mt-2">Zona de cardio equipada con cintas y bicicletas de última tecnología.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4 h-100">
+            <div class="service-icon bg-orange">🏆</div>
+            <h3 class="mt-3">Entrenamiento Personal</h3>
+            <p class="mt-2">Entrenadores certificados para guiarte hacia tus objetivos personales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horarios -->
+  <section id="horarios" class="py-6 bg-light">
+    <div class="container">
+      <div class="text-center">
+        <span class="hero-badge">PLANIFICA TU SEMANA</span>
+        <h2 class="section-title mt-3">Horarios</h2>
+        <p class="mx-auto mt-2" style="max-width:700px;">Horarios flexibles diseñados para adaptarse a tu estilo de vida y rutina diaria.</p>
+      </div>
+
+      <div class="row g-4 mt-5">
+        <div class="col-lg-6">
+          <div class="card p-4 schedule-card h-100">
+            <h3 class="mb-3">Horario del Gimnasio</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between schedule-item"><span>Lunes - Viernes</span><span class="badge-schedule">6:00 AM - 10:00 PM</span></li>
+              <li class="d-flex justify-content-between schedule-item"><span>Sábados</span><span class="badge-schedule">8:00 AM - 8:00 PM</span></li>
+              <li class="d-flex justify-content-between schedule-item"><span>Domingos</span><span class="badge-schedule">8:00 AM - 6:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card p-4 classes-card h-100">
+            <h3 class="mb-3">Clases Grupales</h3>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item class-row d-flex justify-content-between align-items-center">
+                <div><strong>Yoga Matutino</strong><div class="text-muted small">Lunes, miércoles, viernes</div></div>
+                <div class="badge-schedule">7:00 AM - 8:00 AM</div>
+              </div>
+              <div class="list-group-item class-row d-flex justify-content-between align-items-center">
+                <div><strong>Spinning</strong><div class="text-muted small">Martes, jueves</div></div>
+                <div class="badge-schedule">6:30 PM - 7:30 PM</div>
+              </div>
+              <div class="list-group-item class-row d-flex justify-content-between align-items-center">
+                <div><strong>Zumba</strong><div class="text-muted small">Lunes, miércoles</div></div>
+                <div class="badge-schedule">7:00 PM - 8:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-6 text-center">
+    <div class="container">
+      <span class="hero-badge">ESTAMOS AQUÍ PARA TI</span>
+      <h2 class="section-title mt-3">Contáctanos</h2>
+      <p class="mb-4">Ponte en contacto con nosotros para más información o visítanos.</p>
+
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="card contact-card p-4">
+            <h4>Envíanos un Mensaje</h4>
+            <p class="text-muted small">Completa el formulario y te responderemos pronto.</p>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-sm-6"><input type="text" class="form-control" placeholder="Nombre Completo" required></div>
+                <div class="col-sm-6"><input type="tel" class="form-control" placeholder="Teléfono" required></div>
+                <div class="col-12"><input type="email" class="form-control" placeholder="Email" required></div>
+                <div class="col-12"><textarea class="form-control" placeholder="Mensaje" rows="4" required></textarea></div>
+                <div class="col-12 text-end"><button type="submit" class="btn btn-orange">Enviar Mensaje</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex flex-column gap-3">
+            <div class="card p-4 text-start contact-info">
+              <div class="fw-bold mb-1">Teléfono</div>
+              <div class="text-muted small">+57 (355) 123-4567</div>
+            </div>
+            <div class="card p-4 text-start contact-info">
+              <div class="fw-bold mb-1">Email</div>
+              <div class="text-muted small">info@fitlifegym.com</div>
+            </div>
+            <div class="card p-4 text-start contact-info">
+              <div class="fw-bold mb-1">Dirección</div>
+              <div class="text-muted small">Av. Principal 123</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-black text-white text-center py-4">
+    <div class="container d-flex flex-column flex-md-row gap-4 justify-content-between align-items-start">
+      <div>
+        <div class="brand-icon-sm mb-2">FITLIFE</div>
+        <p class="small">Tu destino para una vida más saludable y activa. Transforma tu cuerpo y mente.</p>
+      </div>
+      <div class="text-start">
+        <h6 class="small">Enlaces Rápidos</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="text-start">
+        <h6 class="small">Horario</h6>
+        <p class="small mb-0">Lun - Vie: 6AM - 10PM<br>Sáb: 8AM - 8PM<br>Dom: 8AM - 6PM</p>
+      </div>
+    </div>
+    <div class="container text-center mt-3">
+      <small>© 2025 FITLIFE - Todos los derechos reservados</small>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
